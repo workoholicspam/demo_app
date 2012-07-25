@@ -1,0 +1,23 @@
+<h1>Listing myscaffoldtests</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @myscaffoldtests.each do |myscaffoldtest| %>
+  <tr>
+    <td><%= myscaffoldtest.name %></td>
+    <td><%= link_to 'Show', myscaffoldtest %></td>
+    <td><%= link_to 'Edit', edit_myscaffoldtest_path(myscaffoldtest) %></td>
+    <td><%= link_to 'Destroy', myscaffoldtest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Myscaffoldtest', new_myscaffoldtest_path %>

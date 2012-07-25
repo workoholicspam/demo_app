@@ -1,0 +1,2 @@
+module MyscaffoldtestsHelper
+end
